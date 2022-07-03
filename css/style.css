@@ -261,6 +261,10 @@ a {
   justify-content: space-between;
 }
 
+.command-icons-container-mg {
+  margin-right: 10px;
+}
+
 .our-team {
   background-color: #f5f4fa;
 }
@@ -334,6 +338,29 @@ a {
 .footer .container {
   padding-top: 60px;
 }
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-title {
+  margin-top: -50px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-icons {
+  margin-left: 70px;
+}
+
 .footer .logo-link {
   font-family: var(--second-font-family);
   font-style: normal;
