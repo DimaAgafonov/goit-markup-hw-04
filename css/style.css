@@ -12,6 +12,30 @@ body {
   font-family: var(--main-font-family);
   color: var(--main-txt-color);
 }
+
+.link {
+  text-decoration: none;
+}
+
+.contact-link {
+  color: #757575;
+  fill: #757575;
+}
+
+.contact-link:hover {
+  color: var(--hover-color);
+}
+
+.contact-link:hover .nav-li-item {
+  fill: var(--hover-color);
+}
+
+.nav-li-item {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 button {
   font-family: inherit;
 }
@@ -75,10 +99,16 @@ a {
   margin-right: 10px;
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 
 .contact-wrapper {
   display: flex;
+  margin-right: 30px;
+}
+
+.contact-wrapper:last-of-type {
+  margin-right: 0;
 }
 
 .header {
@@ -139,6 +169,7 @@ a {
 }
 
 .navigation-list-item-link {
+  cursor: pointer;
   color: var(--main-txt-color);
 }
 
@@ -248,6 +279,16 @@ a {
   padding-bottom: 50px;
 }
 
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 .what-we-do-list {
   display: flex;
   justify-content: space-between;
@@ -255,10 +296,25 @@ a {
 
 /* ====== OUR TEAM ====== */
 
+.social-link:focus .social-link-icon,
+.social-link:hover .social-link-icon {
+  fill: var(--white-txt-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-color);
+  border-radius: 50%;
+}
+
 .command-icons-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.command-icons-container-item {
+  cursor: pointer;
 }
 
 .command-icons-container-mg {
@@ -303,6 +359,19 @@ a {
 }
 
 /* === OUR CLIENTS ==== */
+
+.client-logo {
+  border: 1px solid var(--grey-txt-color);
+  border-radius: 4px;
+  margin: 15px 32px;
+  cursor: pointer;
+  fill: #afb1b8;
+}
+
+.client-logo:hover {
+  border: 1px solid var(--hover-color);
+  fill: #2196f3;
+}
 
 .block-our-clients {
   padding: 20px 40px;
